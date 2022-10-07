@@ -270,7 +270,7 @@ nav.navbar {
   height: 100%;
 }
 
-.homepage-content .flex-row .w-reveal .hp-item-content img {
+/* .homepage-content .flex-row .w-reveal .hp-item-content img {
   position: absolute;
   top: 0;
   left: 0;
@@ -286,7 +286,7 @@ nav.navbar {
   opacity: 0;
   transform: none;
   transition: opacity .2s ease-in;
-}
+} */
 
 .homepage-content .bg-grey-1 {
   background-color: #cdcdcd

@@ -1,26 +1,50 @@
+import Image from 'next/image';
+import HomeSlide1 from '../public/Home_3Fotos_Slider_01.jpeg';
+import HomeSlide2 from '../public/Home_3Fotos_Slider_02.jpeg';
+import FotoHome1 from '../public/FotoHome1.png';
+import FotoHome2 from '../public/FotoHome2.png';
+import FotoHome3 from '../public/FotoHome3.jpeg';
+
+
 const HomepageContent = () => {
   return ( 
   <>
   <div class="home page-template page-template-js-homepage page-template-js-homepage-php page page-id-239 layout-fullwidth layout-cover-center parallax-enabled sticky-sidebar-enabled navbar-scroll-enabled">
-
     <div class="site-overlay"></div>
-
     <div class="site-container">
-
-<div class="site-content homepage-content">
-  <div class="container-wide">
-    <div class="content"><div id="owl-carousel-1964933320" class="owl-carousel owl-carousel-homeslider" data-items="1" data-autoplay="true"><div class="item"><div><img title="Homepage Slide 01" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/Home_3Fotos_Slider_01.jpg" alt="Homepage Slide 01"/><div class="owl-carousel-item-imgoverlay"><div class="owl-carousel-item-imgtitle">Homepage Slide 01</div><div class="owl-carousel-item-imgcontent"></div></div></div></div>
-    <div class="item">
-      <div>
-        <img title="HomePage Slide 02" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/Home_3Fotos_Slider_02.jpg" alt="HomePage Slide 02"/>
-        <div class="owl-carousel-item-imgoverlay">
-          <div class="owl-carousel-item-imgtitle">HomePage Slide 02
+      <div class="site-content homepage-content">
+        <div class="container-wide">
+          <div class="content">
+            <div id="owl-carousel-1964933320" class="owl-carousel owl-carousel-homeslider" data-items="1" data-autoplay="true">
+              <div class="item">
+                <div>
+                  <Image
+                    src={HomeSlide1}
+                    alt="Picture of the author"
+                    placeholder="blur" 
+                  />
+                  <div class="owl-carousel-item-imgoverlay">
+                    <div class="owl-carousel-item-imgtitle">Homepage Slide 01</div>
+                    <div class="owl-carousel-item-imgcontent">
+                      </div>
+                  </div>
+                </div>
+              </div>
+          <div class="item">
+            <div>
+              <Image
+                src={HomeSlide2}
+                alt="Homepage Slider"
+                placeholder="blur"
+              />
+              <div class="owl-carousel-item-imgoverlay">
+                <div class="owl-carousel-item-imgtitle">HomePage Slide 02
+                </div>
+                <div class="owl-carousel-item-imgcontent">
+                  </div>
+                  </div>
+                  </div>
           </div>
-          <div class="owl-carousel-item-imgcontent">
-            </div>
-            </div>
-            </div>
-    </div>
     {/* <div class="item">
       <div>
         <img title="HomePage Slide 03" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/Home_3Fotos_Slider_03.jpg" alt="HomePage Slide 03"/>
@@ -32,7 +56,11 @@ const HomepageContent = () => {
       <div class="flex-item flex-item-4 height-2">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-            <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome3.jpg" alt="Josefina Somoza Image 01" />
+            <Image
+              src={FotoHome3}
+              alt="Picture of the author"
+              placeholder="blur" 
+            />
           </div>
       </div>
       <div class="flex-item flex-item-4 height-2">
@@ -45,9 +73,19 @@ const HomepageContent = () => {
       </div>
       <div class="flex-item flex-item-4 height-2 w-reveal">
         <div class="hp-item-content">
-          <img src="https://i.imgur.com/Dhqmrqn.png" alt="" />
-          <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome1.png" alt="" />
-          <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome2.png" alt="" />
+          {/* <img src="https://i.imgur.com/Dhqmrqn.png" alt="" /> */}
+          <Image
+            src={FotoHome1}
+            alt="Picture of the author"
+            placeholder="blur" 
+          />
+          <Image
+            src={FotoHome2}
+            alt="Picture of the author"
+            placeholder="blur" 
+          />
+          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome1.png" alt="" /> */}
+          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome2.png" alt="" /> */}
         </div>
       </div>
     </div>
@@ -60,7 +98,7 @@ const HomepageContent = () => {
       <div class="flex-item flex-item-8 height-1">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-                        <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome4.jpg" alt="Josefina Somoza Image 04"/>
+                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome4.jpg" alt="Josefina Somoza Image 04"/> */}
                   </div>
       </div>
     </div>
@@ -68,7 +106,7 @@ const HomepageContent = () => {
       <div class="flex-item flex-item-4 height-1">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-                        <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome5.jpg" alt="Josefina Somoza Image 06"/>
+                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome5.jpg" alt="Josefina Somoza Image 06"/> */}
                   </div>
       </div>
       <div class="flex-item flex-item-4 height-1 mobile-hidden">
@@ -80,7 +118,7 @@ const HomepageContent = () => {
       <div class="flex-item flex-item-4 height-1">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-                        <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome6.jpg" alt="Josefina Somoza Image 08"/>
+                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome6.jpg" alt="Josefina Somoza Image 08"/> */}
                   </div>
       </div>
     </div>
@@ -96,7 +134,7 @@ const HomepageContent = () => {
       <div class="flex-item flex-item-8 height-2">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-                        <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome12.jpg" alt="Josefina Somoza Image 10" />
+                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome12.jpg" alt="Josefina Somoza Image 10" /> */}
                   </div>
       </div>
     </div>
@@ -104,20 +142,20 @@ const HomepageContent = () => {
       <div class="flex-item flex-item-4 height-2">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-                        <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome8-1.png" alt="Josefina Somoza Image 11" />
+                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome8-1.png" alt="Josefina Somoza Image 11" /> */}
                   </div>
       </div>
       <div class="flex-item flex-item-4 height-2 w-reveal">
         <div class="hp-item-content">
           <img src="https://i.imgur.com/Dhqmrqn.png" alt="" />
-          <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome10.png" alt="" />
-          <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome9.png" alt="" />
+          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome10.png" alt="" /> */}
+          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome9.png" alt="" /> */}
         </div>
       </div>
       <div class="flex-item flex-item-4 height-2">
         <div class="hp-item-content">
           <div class="shade-overlay"></div>
-                      <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome7.jpg" alt="Josefina Somoza Image 12" />
+                      {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome7.jpg" alt="Josefina Somoza Image 12" /> */}
                   </div>
       </div>
     </div>
