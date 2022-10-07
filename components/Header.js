@@ -1,3 +1,7 @@
+import Image from 'next/image';
+import HeaderLogo from '../public/header-logo.png';
+
+
 const Header = () => {
   return (
   <>
@@ -46,15 +50,23 @@ const Header = () => {
               <div class="navbar navbar-primary">
 
           
-                          <a class="navbar-brand" href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/">
+                          {/* <a class="navbar-brand" href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/">
                 <img class="logo-image" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/js-logo-hr.png" alt="Josefina Somoza" />
-              </a>
+              </a> */}
             
             
           
           <ul id="menu-main" class="nav navbar-nav hidden-md-down"><li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/sobre-mi/">Sobre Mi</a></li>
 <li id="menu-item-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/projects/">Proyectos</a></li>
-<li id="menu-item-272" class="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/"></a></li>
+<li id="menu-item-272" class="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272">
+  <a href="https://josefinasomoza.com/">
+    <Image
+      src={HeaderLogo}
+      alt="Josefina Somoza Logo"
+      placeholder="blur" 
+    />
+  </a>
+  </li>
 <li id="menu-item-637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/press-page/">Prensa</a></li>
 <li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/contact/">Contacto</a></li>
 </ul>
@@ -84,11 +96,19 @@ const Header = () => {
         <div class="widget nav_menu-3 widget_nav_menu">
           <div class="menu-main-container">
             <ul id="menu-main-1" class="menu">
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/sobre-mi/">Sobre Mi</a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/projects/">Proyectos</a></li>
-              <li class="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/"></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/press-page/">Prensa</a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/contact/">Contacto</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="http://josefinasomoza.com/sobre-mi/">Sobre Mi</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="http://josefinasomoza.com/projects/">Proyectos</a></li>
+              <li class="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272">
+                <a href="http://josefinasomoza.com/">
+                  <Image
+                    src={HeaderLogo}
+                    alt="Josefina Somoza Logo"
+                    placeholder="blur" 
+                  />
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="http://josefinasomoza.com/press-page/">Prensa</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="http://josefinasomoza.com/contact/">Contacto</a></li>
             </ul>
           </div>
         </div>

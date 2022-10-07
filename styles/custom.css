@@ -100,12 +100,14 @@ nav.navbar {
 .navbar-nav>.nav-logo {
   width: 171px;
   height: 148px;
-  /* background: url(http://web.archive.org/web/20190121230204im_/https://i.imgur.com/MFxbVlY.png) center center no-repeat; */
-  background: url('../public/header-logo.png') center center no-repeat;
-  background-size: contain;
-  vertical-align: middle;
   margin-left: 4.6rem !important;
   margin-right: 4.6rem;
+}
+
+.navbar-nav>.nav-logo a {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sidebar .nav-logo {
