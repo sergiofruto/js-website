@@ -494,6 +494,7 @@ body {
 
 .navbar-nav li.menu-item a {
   display: block;
+  text-decoration: none;
 }
 
 .navbar-nav li.menu-item .sub-menu {
