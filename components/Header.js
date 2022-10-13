@@ -1,74 +1,73 @@
+import Link from 'next/link'
 import Image from 'next/image';
 import HeaderLogo from '../public/header-logo.png';
-
 
 const Header = () => {
   return (
   <>
     <nav className="navbar navbar-fixed offcanvas-push">
-
-      
       <button type="button" className="btn-offcanvas navbar-toggle">
         <i className="icon icon-menu"></i>
       </button>
 
       <ul className="nav navbar-nav navbar-right">
-                      <li className="menu-item hidden-sm-down">
-          <a href="http://web.archive.org/web/20190121230204/http://facebook.com/">
+        <li className="menu-item hidden-sm-down">
+          <a href="http://facebook.com/">
             <i className="icon icon-facebook"></i>
-                      </a>
+          </a>
         </li>
-                      <li className="menu-item hidden-sm-down">
-          <a href="http://web.archive.org/web/20190121230204/http://twitter.com/">
+        <li className="menu-item hidden-sm-down">
+          <a href="http://twitter.com/">
             <i className="icon icon-twitter"></i>
-                      </a>
+          </a>
         </li>
-                      <li className="menu-item hidden-sm-down">
-          <a href="http://web.archive.org/web/20190121230204/http://pinterest.com/">
+        <li className="menu-item hidden-sm-down">
+          <a href="http://pinterest.com/">
             <i className="icon icon-pinterest"></i>
-                      </a>
+        </a>
         </li>
-                      <li className="menu-item hidden-sm-down">
-          <a href="http://web.archive.org/web/20190121230204/http://instagram.com/">
+        <li className="menu-item hidden-sm-down">
+          <a href="http://instagram.com/">
             <i className="icon icon-instagram"></i>
-                      </a>
+          </a>
         </li>
-                      <li className="menu-item hidden-sm-down">
-          <a href="http://web.archive.org/web/20190121230204/http://youtube.com/">
+        <li className="menu-item hidden-sm-down">
+          <a href="http://youtube.com/">
             <i className="icon icon-youtube"></i>
-                      </a>
+          </a>
         </li>
-                      <li className="menu-item hidden-sm-down">
-          <a href="http://web.archive.org/web/20190121230204/http://tumblr.com/">
+        <li className="menu-item hidden-sm-down">
+          <a href="http://tumblr.com/">
             <i className="icon icon-tumblr"></i>
-                      </a>
+          </a>
         </li>
-                          <li className="navbar-search menu-item"><a className="nav-link" href="#search"><i className="icon icon-search"></i></a></li>
+        <li className="navbar-search menu-item">
+          <a className="nav-link" href="#search">
+            <i className="icon icon-search"></i>
+          </a>
+        </li>
       </ul>
-
-      
-              <div className="navbar navbar-primary">
-
-          
+      <div className="navbar navbar-primary">
                           {/* <a className="navbar-brand" href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/">
                 <img className="logo-image" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/js-logo-hr.png" alt="Josefina Somoza" />
               </a> */}
-            
-            
-          
-          <ul id="menu-main" className="nav navbar-nav hidden-md-down"><li id="menu-item-513" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/sobre-mi/">Sobre Mi</a></li>
-<li id="menu-item-500" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/projects/">Proyectos</a></li>
+<ul id="menu-main" className="nav navbar-nav hidden-md-down"><li id="menu-item-513" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="/about-me">Sobre Mi</a></li>
+<li id="menu-item-500" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="/projects">Proyectos</a></li>
 <li id="menu-item-272" className="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272">
-  <a href="https://josefinasomoza.com/">
+  <Link href="/">
     <Image
       src={HeaderLogo}
       alt="Josefina Somoza Logo"
       placeholder="blur" 
     />
-  </a>
+  </Link>
   </li>
-<li id="menu-item-637" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/press-page/">Prensa</a></li>
-<li id="menu-item-188" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/contact/">Contacto</a></li>
+<li id="menu-item-637" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-637">
+  <Link href="/press-page">Prensa</Link>
+</li>
+<li id="menu-item-188" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-188">
+  <Link href="/contact">Contacto</Link>
+</li>
 </ul>
         </div>
       

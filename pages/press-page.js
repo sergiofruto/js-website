@@ -1,9 +1,9 @@
 import Layout from '@components/Layout'
 
-export default function AboutMe() {
+export default function Press() {
   return (
     <Layout>
-      <h1>ABOUT ME</h1>
+      <h1>Prensa</h1>
     </Layout>
   )
 }

@@ -11,9 +11,9 @@
 }
 
 @media(min-width: 992px) {
-  .site-container {
+  /* .site-container {
     margin-top: 148px;
-  }
+  } */
 
   .navbar-toggle {
     font-size: 17px;
@@ -106,8 +106,8 @@ nav.navbar {
 }
 
 .navbar-nav>.nav-logo {
-  width: 171px;
-  height: 148px;
+  width: 170px;
+  padding: 2.2rem 0;
   margin-left: 4.6rem !important;
   margin-right: 4.6rem;
 }
