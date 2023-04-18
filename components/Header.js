@@ -48,43 +48,34 @@ const Header = () => {
         </li>
       </ul>
       <div className="navbar navbar-primary">
-                          {/* <a className="navbar-brand" href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/">
-                <img className="logo-image" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/js-logo-hr.png" alt="Josefina Somoza" />
+                          {/* <a className="navbar-brand" href="http://josefinasomoza.com/">
+                <img className="logo-image" src="http://josefinasomoza.com/wp-content/uploads/2017/09/js-logo-hr.png" alt="Josefina Somoza" />
               </a> */}
-<ul id="menu-main" className="nav navbar-nav hidden-md-down"><li id="menu-item-513" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="/about-me">Sobre Mi</a></li>
-<li id="menu-item-500" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="/projects">Proyectos</a></li>
-<li id="menu-item-272" className="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272">
-  <Link href="/">
-    <Image
-      src={HeaderLogo}
-      alt="Josefina Somoza Logo"
-      placeholder="blur" 
-    />
-  </Link>
-  </li>
-<li id="menu-item-637" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-637">
-  <Link href="/press-page">Prensa</Link>
-</li>
-<li id="menu-item-188" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-188">
-  <Link href="/contact">Contacto</Link>
-</li>
-</ul>
-        </div>
-      
-      
+    <ul id="menu-main" className="nav navbar-nav hidden-md-down"><li id="menu-item-513" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="/about-me">Sobre Mi</a></li>
+    <li id="menu-item-500" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-500"><a href="/projects">Proyectos</a></li>
+    <li id="menu-item-272" className="nav-logo menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-272">
+      <Link href="/">
+        <Image
+          src={HeaderLogo}
+          alt="Josefina Somoza Logo"
+          placeholder="blur" 
+        />
+      </Link>
+    </li>
+    <li id="menu-item-637" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-637">
+      <Link href="/press-page">Prensa</Link>
+    </li>
+    <li id="menu-item-188" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-188">
+      <Link href="/contact">Contacto</Link>
+    </li>
+    </ul>
+    </div>
     </nav>
     <div className="offcanvas-header">
-
-      
       <nav className="navbar clearfix navbar-shadow">
-
-        
-                      <a className="navbar-brand" href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/">
-              <img className="logo-image" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/js-logo-hr.png" alt="Josefina Somoza" />
-            </a>
-          
-          
-        
+        <a className="navbar-brand" href="http://web.archive.org/web/20190121230204/http://josefinasomoza.com/">
+          <img className="logo-image" src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/js-logo-hr.png" alt="Josefina Somoza" />
+        </a>
         <button type="button" className="btn-offcanvas navbar-toggle">
           <i className="icon icon-cross"></i>
         </button>

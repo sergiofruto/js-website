@@ -9,18 +9,5 @@ export default function Home() {
     <Layout>
       <HomepageContent></HomepageContent>
     </Layout>
-    // <div className="container">
-    //   <Head>
-    //     <title>Next.js Starter!</title>
-    //     <link rel="icon" href="/favicon.ico" />
-    //   </Head>
-
-    //   <main>
-    //     {/* <Header title="Welcome to my app!" /> */}
-    //     <HomepageContent></HomepageContent>
-    //     {/* <Footer /> */}
-    //   </main>
-    // </div>
-  // )
   )
 }

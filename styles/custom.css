@@ -222,7 +222,6 @@ nav.navbar {
   height: 100%;
   overflow: hidden;
   transition: all .4s ease-in;
-
 }
 
 .homepage-content .flex-row .hp-item-content img {
@@ -617,6 +616,12 @@ nav.navbar {
   flex-direction: column;
 }
 
+.contact-content .contact-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 32px;
+}
+
 @media(min-width: 992px) {
   .contact-content .my-flex-row {
     flex-direction: row;
@@ -684,6 +689,7 @@ nav.navbar {
 }
 
 .contact-content .form-group .form-control {
+  width: 100%;
   margin-bottom: 35px;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 14.5px;

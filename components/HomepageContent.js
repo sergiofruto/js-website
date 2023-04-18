@@ -1,11 +1,20 @@
 import Image from 'next/image';
 import HomeSlide1 from '../public/Home_3Fotos_Slider_01.jpeg';
 import HomeSlide2 from '../public/Home_3Fotos_Slider_02.jpeg';
-import FotoHome1 from '../public/FotoHome1.png';
-import FotoHome2 from '../public/FotoHome2.png';
-import FotoHome3 from '../public/FotoHome3.jpeg';
+import HomeGrid1 from '../public/home-grid-1.jpeg';
+import HomeGrid2 from '../public/home-grid-2.png';
+import HomeGrid4 from '../public/home-grid-4.png';
+import HomeGrid5 from '../public/home-grid-5.png';
+import HomeGrid6 from '../public/home-grid-6.png';
+import HomeGrid7 from '../public/home-grid-7a.png';
+import HomeGrid9 from '../public/home-grid-9.jpg';
+import HomeGrid10 from '../public/FotoHome10.png';
+import HomeGrid11 from '../public/FotoHome11.jpeg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import styles from './HomepageContent.module.css'
+
+
 
 const HomepageContent = () => {
   return ( 
@@ -19,6 +28,8 @@ const HomepageContent = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
             >
@@ -40,10 +51,10 @@ const HomepageContent = () => {
         </div>
     <div className="flex-row">
       <div className="flex-item flex-item-4 height-2">
-        <div className="hp-item-content">
+        <div className={styles["hp-item-content"]}>
           <div className="shade-overlay"></div>
             <Image
-              src={FotoHome3}
+              src={HomeGrid1}
               alt="Picture of the author"
               placeholder="blur" 
             />
@@ -58,20 +69,20 @@ const HomepageContent = () => {
         </div>
       </div>
       <div className="flex-item flex-item-4 height-2 w-reveal">
-        <div className="hp-item-content">
+        <div className={styles["hp-item-content"]}>
           {/* <img src="https://i.imgur.com/Dhqmrqn.png" alt="" /> */}
           <Image
-            src={FotoHome1}
+            src={HomeGrid2}
             alt="Picture of the author"
-            placeholder="blur" 
+            placeholder="blur"
           />
-          <Image
+          {/* <Image
             src={FotoHome2}
             alt="Picture of the author"
             placeholder="blur" 
-          />
-          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome1.png" alt="" /> */}
-          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome2.png" alt="" /> */}
+          /> */}
+          {/* <img src="http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome1.png" alt="" /> */}
+          {/* <img src="http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome2.png" alt="" /> */}
         </div>
       </div>
     </div>
@@ -84,16 +95,24 @@ const HomepageContent = () => {
       <div className="flex-item flex-item-8 height-1">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome4.jpg" alt="Josefina Somoza Image 04"/> */}
-                  </div>
+            <Image
+              src={HomeGrid4}
+              alt="Josefina Somoza Proyecto 4"
+              placeholder="blur" 
+            />
+          </div>
       </div>
     </div>
     <div className="flex-row">
       <div className="flex-item flex-item-4 height-1">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome5.jpg" alt="Josefina Somoza Image 06"/> */}
-                  </div>
+          <Image
+            src={HomeGrid5}
+            alt="Picture of the author"
+            placeholder="blur" 
+          />
+          </div>
       </div>
       <div className="flex-item flex-item-4 height-1 mobile-hidden">
         <div className="hp-item-content">
@@ -104,8 +123,13 @@ const HomepageContent = () => {
       <div className="flex-item flex-item-4 height-1">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome6.jpg" alt="Josefina Somoza Image 08"/> */}
-                  </div>
+                        {/* <img src="http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome6.jpg" alt="Josefina Somoza Image 08"/> */}
+          <Image
+            src={HomeGrid6}
+            alt="Picture of the author"
+            placeholder="blur" 
+          />
+          </div>
       </div>
     </div>
     <div className="flex-row">
@@ -120,29 +144,46 @@ const HomepageContent = () => {
       <div className="flex-item flex-item-8 height-2">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome12.jpg" alt="Josefina Somoza Image 10" /> */}
-                  </div>
+            <Image
+              src={HomeGrid7}
+              alt="Picture of the author"
+              placeholder="blur" 
+            />
+          </div>
       </div>
     </div>
     <div className="flex-row">
       <div className="flex-item flex-item-4 height-2">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-                        {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome8-1.png" alt="Josefina Somoza Image 11" /> */}
-                  </div>
+                        {/* <img src="http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome8-1.png" alt="Josefina Somoza Image 11" /> */}
+            <Image
+              src={HomeGrid9}
+              alt="Picture of the author"
+              placeholder="blur" 
+            />
+          </div>
       </div>
       <div className="flex-item flex-item-4 height-2 w-reveal">
         <div className="hp-item-content">
-          <img src="https://i.imgur.com/Dhqmrqn.png" alt="" />
-          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome10.png" alt="" /> */}
-          {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome9.png" alt="" /> */}
+            <Image
+              src={HomeGrid10}
+              alt="Picture of the author"
+              placeholder="blur" 
+            />
+          {/* <img src="http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome10.png" alt="" /> */}
+          {/* <img src="http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome9.png" alt="" /> */}
         </div>
       </div>
       <div className="flex-item flex-item-4 height-2">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-                      {/* <img src="http://web.archive.org/web/20190121230204im_/http://josefinasomoza.com/wp-content/uploads/2017/09/FotoHome7.jpg" alt="Josefina Somoza Image 12" /> */}
-                  </div>
+            <Image
+              src={HomeGrid11}
+              alt="Picture of the author"
+              placeholder="blur" 
+            />
+          </div>
       </div>
     </div>
   </div>
@@ -174,7 +215,7 @@ const HomepageContent = () => {
     <a href="#top" className="scroll-to-top hidden-sm-down"></a>
     </div>
   </>
-   );
+  );
 }
  
 export default HomepageContent;
