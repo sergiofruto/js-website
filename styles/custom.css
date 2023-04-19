@@ -821,6 +821,10 @@ nav.navbar {
   margin-bottom: 0;
 }
 
+.home .site-content.homepage-content {
+  margin-bottom: 0;
+}
+
 .post.type-post .post-wrap,
 .posts-related,
 .post-comments {

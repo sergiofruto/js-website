@@ -8,8 +8,8 @@ export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        
+        <link rel="icon" href="/favicon.ico"/>
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -23,6 +23,9 @@ export default function Layout({ children, home }) {
         <title>{siteTitle}</title>
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet" />
       </Head>
       <main>
         <Header></Header>

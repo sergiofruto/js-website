@@ -178,11 +178,11 @@ const HomepageContent = () => {
       <div className="flex-item flex-item-4 height-2">
         <div className="hp-item-content">
           <div className="shade-overlay"></div>
-            <Image
+            {/* <Image
               src={HomeGrid11}
               alt="Picture of the author"
               placeholder="blur" 
-            />
+            /> */}
           </div>
       </div>
     </div>
